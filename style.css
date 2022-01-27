@@ -124,6 +124,35 @@ nav.responsive .menu-section{
 .btn-video:hover {
   text-decoration: underline;
 }
+.clients {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.clients::before,
+.clients::after {
+  position: absolute;
+  content: '';
+  width: 94%;
+  height: 1px;
+  left: 50%;
+  background-color: #E5E7EB;
+}
+.clients::before {
+  top: 0;
+  transform: translate(-50%,0);
+}
+.clients::after {
+  top: 100%;
+  transform: translate(-50%, 100%);
+}
+.client {
+  padding: 16px 32px;
+}
 @media(min-width:767px) {
   .logo-section{
     padding: 24px 20px;
@@ -178,5 +207,8 @@ nav.responsive .menu-section{
     justify-content: space-between;
     align-items: center;
     padding: 72px 0;
+  }
+  .clients{
+    padding: 40px 0;
   }
 }

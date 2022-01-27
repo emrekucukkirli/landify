@@ -5,5 +5,5 @@ document.querySelector(".toggle").onclick = function responsive() {
   } else {
     navbar.className = "container";
   }
-  // $(".menu-section").slideToggle(700);
+  $(".menu-section").slideToggle(600);
 }
