@@ -194,12 +194,52 @@ nav.responsive .menu-section{
 .testimonials .container::after{
   position: absolute;
   content: '';
-  left: -100px;
-  top: -50px;
-  width: 100%;
-  height: 100%;
+  left: -10px;
+  top: -30px;
+  width: 96px;
+  height: 78px;
   z-index: 0;
   background: url('img/quote.svg') no-repeat;
+  background-size: contain;
+}
+.testimonials .title {
+  font-size: 30px;
+}
+.testimonials .info {
+  font-size: 16px;
+}
+.testimonial-card {
+  margin: 24px 0;
+  padding: 32px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1), 0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+}
+.testimonial-content {
+  position: relative;
+  padding: 32px 0 0 32px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.testimonial-content::after{
+  position: absolute;
+  content: '';
+  top: 32px;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background: url('img/quote-small.svg') no-repeat;
+  z-index: 0;
+}
+.testimonial-content b {
+  display: block;
+  padding-top: 24px;
+}
+.testimonial-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B7280;
 }
 .footer{
   background: #000;
@@ -275,6 +315,17 @@ nav.responsive .menu-section{
   }
   .features .info {
     padding: 15px 32px;
+  }
+  .testimonials{
+    padding: 120px 40px 80px 40px;
+  }
+  .testimonials .title{
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .testimonials .info{
+    font-size: 18px;
+    line-height: 28px;
   }
   .footer .container {
     flex-direction: row;
