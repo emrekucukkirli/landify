@@ -153,6 +153,37 @@ nav.responsive .menu-section{
 .client {
   padding: 16px 32px;
 }
+.features {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 20px;
+}
+.features .title,
+.features .info {
+  text-align: center;
+}
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feature {
+  width: 100%;
+  text-align: center;
+  padding: 24px 20px;
+}
+.feature-title{
+  padding: 20px 0 8px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.feature-text {
+  font-weight: 400;
+  line-height: 24px;
+}
 @media(min-width:767px) {
   .logo-section{
     padding: 24px 20px;
@@ -177,6 +208,13 @@ nav.responsive .menu-section{
   .title {
   font-size: 48px;
   line-height: 60px;
+  }
+  .feature{
+    width: 45%;
+    padding: 32px;
+  }
+  .features .info {
+    padding: 15px 32px;
   }
 }
 @media(min-width:1024px) {
@@ -210,5 +248,17 @@ nav.responsive .menu-section{
   }
   .clients{
     padding: 40px 0;
+  }
+  .features .info{
+    width: 70%;
+    margin: auto;
+  }
+  .feature {
+    width: 33.3%;
+    padding: 32px 15px;
+  }
+  .feature-title{
+    font-size: 30px;
+    line-height: 40px;
   }
 }
