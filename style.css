@@ -378,6 +378,51 @@ nav.responsive .menu-section{
     font-size: 30px;
     line-height: 40px;
   }
+  .testimonials{
+    height: 892px;
+    padding: 100px 0 80px 0;
+  }
+  .testimonials .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  flex-start;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+  }
+  .testimonials .container::after{
+    left: -60px;
+    top: -20px;
+  }
+  .testimonial-header {
+    width: 488px;
+    margin-bottom: 33px;
+  }
+  .testimonial-header .title{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+  }
+  .testimonial-card{
+    margin: 16px;
+  }
+  .testimonial-card.first {
+    order: 2;
+    width: 488px;
+    margin-top: 64px;
+  }
+  .testimonial-card.second {
+    order: 1;
+    width: 384px;
+    align-self: flex-end;
+  }
+  .testimonial-card.thirth {
+    order: 3;
+    width: 384px;
+    align-self: flex-start;
+  }
   .footer .container {
     padding: 64px 0;
   }
