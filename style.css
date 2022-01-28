@@ -188,6 +188,62 @@ nav.responsive .menu-section{
   padding: 80px 20px;
   background: #D5FAFC;
 }
+.testimonials .container {
+  position: relative;
+}
+.testimonials .container::after{
+  position: absolute;
+  content: '';
+  left: -100px;
+  top: -50px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url('img/quote.svg') no-repeat;
+}
+.footer{
+  background: #000;
+  color: #fff;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.footer .logo img {
+  padding-bottom: 18px;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer li {
+  padding: 6px 24px 6px 0;
+}
+.footer li a {
+  color: #fff;
+  line-height: 24px;
+}
+.copyright {
+  padding: 18px 0;
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0 20px 0;
+}
+.footer-end>*{
+  padding: 8px 0;
+}
+.footer-end p{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #d1d5db;
+}
 @media(min-width:767px) {
   .logo-section{
     padding: 24px 20px;
@@ -219,6 +275,12 @@ nav.responsive .menu-section{
   }
   .features .info {
     padding: 15px 32px;
+  }
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 40px;
   }
 }
 @media(min-width:1024px) {
@@ -264,5 +326,11 @@ nav.responsive .menu-section{
   .feature-title{
     font-size: 30px;
     line-height: 40px;
+  }
+  .footer .container {
+    padding: 64px 0;
+  }
+  .footer-first li a:hover {
+    text-decoration: underline;
   }
 }
